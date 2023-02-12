@@ -17,7 +17,7 @@ refs.searchBox.addEventListener(
 );
 
 function onInputEvent(e) {
-  if (e.target.value === '') {
+  if (e.target.value.trim() === '') {
     return;
   }
   refs.countryList.innerHTML = '';
