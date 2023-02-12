@@ -31,8 +31,19 @@ body {
 }
 
 .country-svg {
-  width: 20px;
-  height: 20px;
+  width: 35px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.country {
+  display: flex;
+  align-items: center;
+}
+
+.country-info .country-svg {
+  width: 45px;
+  height: 30px;
 }
 
 .country-name {

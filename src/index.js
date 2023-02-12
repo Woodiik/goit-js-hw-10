@@ -46,9 +46,7 @@ function onInputEvent(e) {
 function renderCountriesList(data) {
   data.map(({ flags, name }) => {
     const markup = `<li class="country-list-item">
-          <svg class="country-svg" width="20" height="20">
-            <use href="${flags.svg}"></use>
-          </svg>
+          <img class="country-svg" src="${flags.svg}">
         <span>${name.common}</span>
       </li>`;
     refs.countryList.insertAdjacentHTML('beforeend', markup);
@@ -58,9 +56,7 @@ function renderCountriesList(data) {
 function renderCountryCard(data) {
   data.map(({ flags, name, population, languages, capital }) => {
     const markup = `<div class="country">
-      <svg class="country-svg" width="20" height="20">
-        <use href="${flags.svg}"></use>
-      </svg>
+          <img class="country-svg" src="${flags.svg}">
       <span class="country-name">${name.common}</span>
     </div>
     <div class="country-disc"><span class="country-disc-bold">Capital:</span> ${capital}</div>
